@@ -10,7 +10,7 @@ class HomeView extends GetView<HomeController> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: const Text('Home View'),
+        title: const Text('Homepage'),
         centerTitle: true,
       ),
       body: const Center(
@@ -18,6 +18,18 @@ class HomeView extends GetView<HomeController> {
           'Home View is working',
           style: TextStyle(fontSize: 20),
         ),
+      ),
+      bottomNavigationBar: BottomNavigationBar(
+        items: const <BottomNavigationBarItem>[
+          BottomNavigationBarItem(
+            icon: Icon(Icons.home),
+            label: '',
+          ),
+          BottomNavigationBarItem(
+            icon: Icon(Icons.map),
+            label: '',
+          ),
+        ],
       ),
     );
   }

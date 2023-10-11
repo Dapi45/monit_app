@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 
 import 'package:get/get.dart';
+import 'package:monit_app/app/utils/widget/navigasi.dart';
 
 import '../controllers/home_controller.dart';
 
@@ -19,18 +20,7 @@ class HomeView extends GetView<HomeController> {
           style: TextStyle(fontSize: 20),
         ),
       ),
-      bottomNavigationBar: BottomNavigationBar(
-        items: const <BottomNavigationBarItem>[
-          BottomNavigationBarItem(
-            icon: Icon(Icons.home),
-            label: '',
-          ),
-          BottomNavigationBarItem(
-            icon: Icon(Icons.map),
-            label: '',
-          ),
-        ],
-      ),
+      bottomNavigationBar: navigasi(),
     );
   }
 }

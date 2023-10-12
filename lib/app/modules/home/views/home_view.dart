@@ -20,7 +20,7 @@ class HomeView extends GetView<HomeController> {
           style: TextStyle(fontSize: 20),
         ),
       ),
-      bottomNavigationBar: navigasi(),
+      bottomNavigationBar: const navigasi(),
     );
   }
 }

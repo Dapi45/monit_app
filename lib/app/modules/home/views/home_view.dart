@@ -1,8 +1,6 @@
 import 'package:flutter/material.dart';
-
 import 'package:get/get.dart';
-import 'package:monit_app/app/utils/widget/navigasi.dart';
-
+import '../../../utils/widget/navigasi.dart';
 import '../controllers/home_controller.dart';
 
 class HomeView extends GetView<HomeController> {
@@ -13,6 +11,7 @@ class HomeView extends GetView<HomeController> {
       appBar: AppBar(
         title: const Text('Homepage'),
         centerTitle: true,
+        automaticallyImplyLeading: false,
       ),
       body: const Center(
         child: Text(
@@ -20,7 +19,7 @@ class HomeView extends GetView<HomeController> {
           style: TextStyle(fontSize: 20),
         ),
       ),
-      bottomNavigationBar: const navigasi(),
+      bottomNavigationBar: const navigation(),
     );
   }
 }
